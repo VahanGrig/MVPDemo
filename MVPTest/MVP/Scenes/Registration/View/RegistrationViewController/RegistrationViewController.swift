@@ -18,7 +18,7 @@ final class RegistrationViewController: ViewController<RegistrationViewContainer
     }
 }
 
-// MARK: - PresenterDelegate
+// MARK: - Presenter Delegate
 extension RegistrationViewController: RegistrationViewControllable {
     func getArtistName(_ name: String) {
         guard let coordinator else { return }
@@ -27,7 +27,7 @@ extension RegistrationViewController: RegistrationViewControllable {
     }
 }
 
-// MARK: - ViewDelegate
+// MARK: - View Output
 extension RegistrationViewController: RegistrationViewDataPassingDelegate {
     func tapPressed() {
         Task {

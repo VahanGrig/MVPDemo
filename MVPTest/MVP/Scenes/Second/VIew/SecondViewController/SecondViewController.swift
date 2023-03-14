@@ -32,12 +32,14 @@ final class SecondViewController: ViewController<SecondViewContainer,
     }
 }
 
+// MARK: - Presenter Delegate
 extension SecondViewController: SecondViewControllable {
     func update(with name: String) {
         customView.mainView.setArtistName(name)
     }
 }
 
+// MARK: - View Output
 extension SecondViewController: SecondViewDelegate {
     func isRead() {
         delegate?.isRead()
