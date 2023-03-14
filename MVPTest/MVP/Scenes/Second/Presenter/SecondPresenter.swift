@@ -22,7 +22,7 @@ final class SecondPresenter<C: SecondViewControllable>: SecondPresentable {
         self.dataTransferObject = dataTransferObject
     }
     
-    // MARK: - View Input
+    // MARK: - SecondPresentable
     func getArtistName() {
         view?.update(with: dataTransferObject.artistName)
     }
